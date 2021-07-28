@@ -1,0 +1,7 @@
+.DS_STORE
+.env
+.idea
+.vscode
+vendor
+storage/logs/*
+!storage/logs/.gitkeep

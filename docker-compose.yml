@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  swoole:
+    image: phpswoole/swoole:latest
+    container_name: telgraf
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - APP_SECRET=${APP_SECRET}
+      - APP_CHAT_IDS=${APP_CHAT_IDS}
+      - SRV_HOST=${SRV_HOST}
+      - SRV_PORT=${SRV_PORT}
+      - SRV_HOSTNAME=${SRV_HOSTNAME}
+      - SRV_PROTOCOL=${SRV_PROTOCOL}
+      - LOG_FILE=${LOG_FILE}
+      - LOG_LEVEL=${LOG_LEVEL}
+    command: >
+      bash -c "cd /var/www/telgraf
+      && composer install
+      && php ./app/websocket.php start"
+    ports:
+      - 8081:80
+    working_dir: /var/www/telgraf
+    volumes:
+      - ./:/var/www/telgraf

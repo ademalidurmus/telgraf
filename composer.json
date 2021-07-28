@@ -1,0 +1,26 @@
+{
+  "name": "aad/telgraf",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Adem Ali Durmuş",
+      "email": "ademali@durmus.me"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "AAD\\Telgraf\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "require-dev": {
+    "swoole/ide-helper": "@dev"
+  },
+  "require": {
+    "ext-json": "*",
+    "respect/validation": "^2.2",
+    "ramsey/uuid": "^4.1",
+    "monolog/monolog": "^2.2"
+  }
+}
