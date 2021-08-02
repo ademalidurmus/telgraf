@@ -56,5 +56,6 @@ help:
 	@echo "    delete_webhook   Delete telegram webhook"
 	@echo "    restart        	Restart telgraf"
 	@echo "    cli            	Enter telgraf bash"
+	@echo "    logs            	Tail log files"
 	@echo "    down           	Stop telgraf"
 	@echo "    clean          	Clean telgraf"
