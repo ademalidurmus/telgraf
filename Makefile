@@ -2,10 +2,10 @@ all: help
 
 env:
 	@cp ./.env.example .env
-	@echo ".env file has been created with default enviroments."
+	@echo ".env file has been created with default environments."
 
 clean:
-	@echo "Removing enviroments..."
+	@echo "Removing environments..."
 	@rm -rf .env
 
 	@echo "Removing log files..."
@@ -48,13 +48,14 @@ help:
 	@echo "Usage:             make COMMAND"
 	@echo ""
 	@echo "Commands:"
-	@echo "    env            Create a new .env file from .env.example"
-	@echo "    build          Build telgraf"
-	@echo "    up             Serve telgraf"
-	@echo "    status         Show service status"
-	@echo "    set_webhook    Set telegram webhook"
-	@echo "    set_webhook    Delete telegram webhook"
-	@echo "    restart        Restart telgraf"
-	@echo "    cli            Enter telgraf bash"
-	@echo "    down           Stop telgraf"
-	@echo "    clean          Clean telgraf"
+	@echo "    env            	Create a new .env file from .env.example"
+	@echo "    build          	Build telgraf"
+	@echo "    up             	Serve telgraf"
+	@echo "    status         	Show service status"
+	@echo "    set_webhook    	Set telegram webhook"
+	@echo "    delete_webhook   Delete telegram webhook"
+	@echo "    restart        	Restart telgraf"
+	@echo "    cli            	Enter telgraf bash"
+	@echo "    logs            	Tail log files"
+	@echo "    down           	Stop telgraf"
+	@echo "    clean          	Clean telgraf"
