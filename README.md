@@ -40,7 +40,7 @@ Simple live support server with PHP Swoole Websocket and Telegram API.
 - `attributes`: _object_, message attributes
   - `attributes.name`: _string_, client name
 
-Sample webscoket message history:
+Sample websocket message history:
 
 ```
 ❌ Disconnected from wss://telgraf.durmus.me
