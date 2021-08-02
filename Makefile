@@ -2,10 +2,10 @@ all: help
 
 env:
 	@cp ./.env.example .env
-	@echo ".env file has been created with default enviroments."
+	@echo ".env file has been created with default environments."
 
 clean:
-	@echo "Removing enviroments..."
+	@echo "Removing environments..."
 	@rm -rf .env
 
 	@echo "Removing log files..."
