@@ -11,7 +11,10 @@ use Swoole\Websocket\Server;
 use Swoole\WebSocket\Frame;
 use Swoole\Http\Request;
 use Swoole\Http\Response;
+use Swoole\Runtime;
 use Swoole\Timer;
+
+Runtime::enableCoroutine(true, SWOOLE_HOOK_FILE);
 
 $stores = Stores::build();
 $config = $stores[Stores::CONFIG];
